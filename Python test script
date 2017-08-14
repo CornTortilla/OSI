@@ -1,0 +1,86 @@
+print "Which OSI layer would you be interested in learning about today?" 
+\
+print "[1] Physical"
+\
+print "[2] Data Link"
+\
+print "[3] Network"
+\
+print "[4] Transport"
+\
+print "[5] Session"
+\
+print "[6] Presentation"
+\
+print "[7] Application"
+
+choice = int(input())
+
+if choice == 1:
+ print "The Physical layer facilitates movement of bits between devices."
+ \
+ print "It also specifies voltages abd pinouts!" 
+ \
+ print "Protocols include but are not limited to EIA and TIA-232."
+ \
+ print "Common examples would include signals and media."
+
+if choice == 2: 
+ print "The Data Link layer combines bits to form bytes and bytes to form frames."
+ \
+ print "This layer is where you access your media using a mac address!"
+ \
+ print "Error detection is taken care of at this layer, but not correction."
+ \
+ print "Protocols for this layer include but are not limited to 802.3 and 802.2."
+ \
+ print "Common examples would include MAC addresses and switching."
+
+if choice == 3: 
+ print "The Network layer determines logical addressing for path determination."
+ \
+ print "Protocols include IP and IPX."
+ \
+ print "Common examples include path selection, routing, and logical addressing"
+
+if choice == 4: 
+ print "The Transport layer delivers the data, whether it be reliable or unreliable."
+ \
+ print "TCP verifys the packets are sent, and recieved, while UDP just transmits and does not care if a recipient recieves any of the data."
+ \
+ print "Tcp also corrects errors before retransmitting data."
+ \
+ print "Protocols include TCP, UDP, and SPX. Common examples include flow control and reliability."
+
+if choice == 5: 
+ print "The Session layer keeps data from applications separate."
+ \
+ print "This would be your operating system. "
+ \
+ print "This is also where connections are established." 
+ \
+ print "Common examples for this layer are application access, scheduling," 
+ \
+ print "and can be referred to simply as dialougues and conversations."
+
+if choice == 6:
+ print "The Presentation layer is how the data is presented to the end user."
+ \
+ print "It also handles any special processing such as encryption."
+ \
+ print "Protocols include ASCII, and EBCDIC."
+ \
+ print "Common data format is what this layer handles."
+
+if choice == 7:
+ print "The application layer is the end users interface with data."
+ \
+ print "This could include Telnet, HTTP, and FTP."
+ \
+ print "This is the OSI layer that is closest to the end user."
+
+if choice > 7:
+ print "That is not a valid option"
+
+if choice < 1:
+ print "That is not a valid option"
